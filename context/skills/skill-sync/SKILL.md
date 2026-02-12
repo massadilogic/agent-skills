@@ -27,7 +27,7 @@ Each skill that should appear in Auto-invoke sections needs these fields in `met
 
 ```yaml
 metadata:
-  author: prowler-cloud
+  author: author-name
   version: "1.0"
   scope: [ui]                                    # Which AGENTS.md: ui, api, sdk, root
 
@@ -47,7 +47,7 @@ metadata:
 | `root` | `AGENTS.md` (repo root) |
 | `ui` | `ui/AGENTS.md` |
 | `api` | `api/AGENTS.md` |
-| `sdk` | `prowler/AGENTS.md` |
+| `sdk` | `app/AGENTS.md` |
 | `mcp_server` | `mcp_server/AGENTS.md` |
 
 Skills can have multiple scopes: `scope: [ui, api]`
@@ -76,9 +76,9 @@ Skills can have multiple scopes: `scope: [ui, api]`
 Given this skill metadata:
 
 ```yaml
-# skills/prowler-ui/SKILL.md
+# skills/app-ui/SKILL.md
 metadata:
-  author: prowler-cloud
+  author: author-name
   version: "1.0"
   scope: [ui]
   auto_invoke: "Creating/modifying React components"
@@ -93,7 +93,7 @@ When performing these actions, ALWAYS invoke the corresponding skill FIRST:
 
 | Action | Skill |
 |--------|-------|
-| Creating/modifying React components | `prowler-ui` |
+| Creating/modifying React components | `app-ui` |
 ```
 
 ---

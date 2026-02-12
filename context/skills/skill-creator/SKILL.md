@@ -5,7 +5,7 @@ description: >
   Trigger: When user asks to create a new skill, add agent instructions, or document patterns for AI.
 license: Apache-2.0
 metadata:
-  author: prowler-cloud
+  author: author-name
   version: "1.0"
   scope: [root]
   auto_invoke: "Creating new skills"
@@ -51,7 +51,7 @@ description: >
   Trigger: {When the AI should load this skill}.
 license: Apache-2.0
 metadata:
-  author: prowler-cloud
+  author: author-name
   version: "1.0"
 ---
 
@@ -86,8 +86,8 @@ metadata:
 | Type | Pattern | Examples |
 |------|---------|----------|
 | Generic skill | `{technology}` | `pytest`, `playwright`, `typescript` |
-| Prowler-specific | `prowler-{component}` | `prowler-api`, `prowler-ui`, `prowler-sdk-check` |
-| Testing skill | `prowler-test-{component}` | `prowler-test-sdk`, `prowler-test-api` |
+| App-specific | `App-{component}` | `App-api`, `App-ui`, `App-sdk-check` |
+| Testing skill | `App-test-{component}` | `App-test-sdk`, `App-test-api` |
 | Workflow skill | `{action}-{target}` | `skill-creator`, `jira-task` |
 
 ---
@@ -106,12 +106,12 @@ Link to external guides?    → references/ (with local path)
 
 ---
 
-## Decision: Prowler-Specific vs Generic
+## Decision: App-Specific vs Generic
 
 ```
 Patterns apply to ANY project?     → Generic skill (e.g., pytest, typescript)
-Patterns are Prowler-specific?     → prowler-{name} skill
-Generic skill needs Prowler info?  → Add references/ pointing to Prowler docs
+Patterns are App-specific?     → App-{name} skill
+Generic skill needs App info?  → Add references/ pointing to App docs
 ```
 
 ---
@@ -122,8 +122,8 @@ Generic skill needs Prowler info?  → Add references/ pointing to Prowler docs
 |-------|----------|-------------|
 | `name` | Yes | Skill identifier (lowercase, hyphens) |
 | `description` | Yes | What + Trigger in one block |
-| `license` | Yes | Always `Apache-2.0` for Prowler |
-| `metadata.author` | Yes | `prowler-cloud` |
+| `license` | Yes | Always `Apache-2.0` for App |
+| `metadata.author` | Yes | `author-name` |
 | `metadata.version` | Yes | Semantic version as string |
 
 ---

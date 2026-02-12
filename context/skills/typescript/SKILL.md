@@ -5,7 +5,7 @@ description: >
   Trigger: When implementing or refactoring TypeScript in .ts/.tsx (types, interfaces, generics, const maps, type guards, removing any, tightening unknown).
 license: Apache-2.0
 metadata:
-  author: prowler-cloud
+  author: author-name
   version: "1.0"
   scope: [root, ui]
   auto_invoke: "Writing TypeScript types/interfaces"

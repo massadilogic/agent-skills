@@ -5,7 +5,7 @@ description: >
   Trigger: When styling with Tailwind (className, variants, cn()), especially when dynamic styling or CSS variables are involved (no var() in className).
 license: Apache-2.0
 metadata:
-  author: prowler-cloud
+  author: author-name
   version: "1.0"
   scope: [root, ui]
   auto_invoke: "Working with Tailwind classes"

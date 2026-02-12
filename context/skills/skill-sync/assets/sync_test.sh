@@ -40,7 +40,7 @@ setup_test_env() {
     mkdir -p "$TEST_DIR/skills/skill-sync/assets"
     mkdir -p "$TEST_DIR/ui"
     mkdir -p "$TEST_DIR/api"
-    mkdir -p "$TEST_DIR/prowler"
+    mkdir -p "$TEST_DIR/app"
 
     # Create mock SKILL.md files with metadata
     cat > "$TEST_DIR/skills/mock-ui-skill/SKILL.md" << 'EOF'
@@ -165,7 +165,7 @@ EOF
 API rules here.
 EOF
 
-    cat > "$TEST_DIR/prowler/AGENTS.md" << 'EOF'
+    cat > "$TEST_DIR/app/AGENTS.md" << 'EOF'
 # SDK AGENTS
 
 > **Skills Reference**: For detailed patterns, use these skills:
@@ -350,9 +350,9 @@ test_generate_correct_skill_in_api() {
 
 test_generate_correct_skill_in_sdk() {
     run_sync > /dev/null
-    assert_file_contains "$TEST_DIR/prowler/AGENTS.md" "mock-sdk-skill" \
+    assert_file_contains "$TEST_DIR/app/AGENTS.md" "mock-sdk-skill" \
         "SDK AGENTS should contain mock-sdk-skill" && \
-    assert_file_not_contains "$TEST_DIR/prowler/AGENTS.md" "mock-ui-skill" \
+    assert_file_not_contains "$TEST_DIR/app/AGENTS.md" "mock-ui-skill" \
         "SDK AGENTS should not contain mock-ui-skill"
 }
 

@@ -5,7 +5,7 @@ description: >
   Trigger: When implementing client-side state with Zustand (stores, selectors, persist middleware, slices).
 license: Apache-2.0
 metadata:
-  author: prowler-cloud
+  author: zustand
   version: "1.0"
   scope: [root, ui]
   auto_invoke: "Using Zustand stores"
