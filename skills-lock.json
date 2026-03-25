@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "solid-principles": {
+      "source": "thebushidocollective/han",
+      "sourceType": "github",
+      "computedHash": "302fc51ca42b1a002d100f4a344c5ffeeb7a46afb1bd54cf1c18ada7cb932577"
+    }
+  }
+}

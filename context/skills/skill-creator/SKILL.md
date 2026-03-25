@@ -147,7 +147,7 @@ Generic skill needs App info?  → Add references/ pointing to App docs
 
 ## Registering the Skill
 
-After creating the skill, add it to `AGENTS.md`:
+After creating the skill, add it to `AGENTS.md` file:
 
 ```markdown
 | `{skill-name}` | {Description} | [SKILL.md](skills/{skill-name}/SKILL.md) |
