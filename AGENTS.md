@@ -29,7 +29,7 @@ Below are examples of avalable skills and examples of how new skills may be orga
 
 | Skill | Description | URL |
 |-------|-------------|-----|
-| `clean-code-principles` | Clean code principles for software design | [SKILL.md](contxt/skills/solid-principles/) |
+| `clean-code-principles` | Clean code principles for software design | [SKILL.md](context/skills/clean-code-principles/SKILL.md) |
 | `solid-principles` | SOLID principles for software design | [SKILL.md](context/skills/solid-principles/SKILL.md) |
 | `github-workflow` | GitHub workflow best practices for teams | [SKILL.md](context/skills/github-workflow/SKILL.md) |
 
@@ -72,4 +72,5 @@ When a skill is created, it should be added to this section.
 |--------|-------|
 | Applying SOLID principles | `solid-principles` |
 | Setting up GitHub workflow | `github-workflow` |
+| Applying clean code principles | `clean-code-principles` |
 
